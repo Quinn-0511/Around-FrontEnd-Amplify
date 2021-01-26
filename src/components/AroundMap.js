@@ -36,7 +36,17 @@ class NormalAroundMap extends React.Component {
   }
 
   render() {
-    const { lat, lon } = JSON.parse(localStorage.getItem(POS_KEY));
+
+
+    if (localStorage.getItem(POS_KEY) == null) {
+      var lat = 37.84469154098336;
+      var lon = -122.292979660887;
+    }
+    else {
+      var { lat, lon } = JSON.parse(localStorage.getItem(POS_KEY));
+    }
+
+
     return (
       <GoogleMap
         ref={this.getMapRef}
