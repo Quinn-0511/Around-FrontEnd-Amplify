@@ -1,4 +1,4 @@
-export const API_ROOT = 'http://35.193.153.167';
+export const API_ROOT = 'http://35.225.128.253:8080';
 export const TOKEN_KEY = 'TOKEN_KEY';
 export const GEO_OPTIONS = {
   enableHighAccuracy: true,
